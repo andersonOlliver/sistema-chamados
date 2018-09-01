@@ -1,3 +1,3 @@
 # SistemaChamados
 
-Sistema com funcionalidades básicas para registro de chamados, para ser trabalhado na oficina do Futxicaiada Tecnológicas
+Sistema com funcionalidades básicas para registro de chamados. Seu desenvolvimento foi direcionado a apresentação da oficina de Angular + Firebase no Futxicaiada Tecnológicas

@@ -7,16 +7,20 @@
           <p-tabPanel header="Acessar">
             <div class="row">
               <div class="col-lg-8 col-lg-offset-2">
+
                 <h2>Acesse sua conta</h2>
-                <form>
+
+                <form (submit)="entrar()">
                   <div class="form-group">
                     <label for="entrar-email" class="text-info">E-mail:</label>
-                    <input id="entrar-email" type="text" class="form-control" placeholder="Informe o e-mail">
+                    <input id="entrar-email" type="text" class="form-control" placeholder="Informe o e-mail"
+                    [(ngModel)]="login.email" name="email">
                   </div>
 
                   <div class="form-group">
                     <label for="entrar-email" class="text-info">Senha:</label>
-                    <input id="entrar-senha" type="password" class="form-control" placeholder="Informe a senha">
+                    <input id="entrar-senha" type="password" class="form-control" placeholder="Informe a senha"
+                    [(ngModel)]="login.senha" name="senha">
                   </div>
 
                   <div class="form-group">
@@ -33,20 +37,23 @@
             <div class="row">
               <div class="col-lg-8 col-lg-offset-2">
                 <h2>Cadastre-se e use grátis</h2>
-                <form>
+                <form (submit)="cadastrar()">
                   <div class="form-group">
                     <label for="cadastro-email" class="text-info">E-mail:</label>
-                    <input id="cadastro-email" type="text" class="form-control" placeholder="Informe o e-mail">
+                    <input id="cadastro-email" type="text" class="form-control" placeholder="Informe o e-mail"
+                    [(ngModel)]="cadastro.email" name="email">
                   </div>
 
                   <div class="form-group">
                     <label for="cadastro-senha" class="text-info">Senha:</label>
-                    <input id="cadastro-senha" type="password" class="form-control" placeholder="Informe a senha">
+                    <input id="cadastro-senha" type="password" class="form-control" placeholder="Informe a senha"
+                    [(ngModel)]="cadastro.senha" name="senha">
                   </div>
 
                   <div class="form-group">
                     <label for="cadastro-repita-senha" class="text-info">Repetir senha:</label>
-                    <input id="cadastro-repita-senha" type="password" class="form-control" placeholder="Informe a senha">
+                    <input id="cadastro-repita-senha" type="password" class="form-control" placeholder="Informe a senha"
+                    [(ngModel)]="cadastro.repitasenha" name="repitaSenha">
                   </div>
 
                   <div class="form-group">
